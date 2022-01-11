@@ -30,3 +30,7 @@ const createToDo = (ev) => {
     let itemList = document.getElementById("list");
     itemList.appendChild(newListItem);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("btn").addEventListener('click', createToDo);
+});
