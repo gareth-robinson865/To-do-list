@@ -22,7 +22,7 @@ const createToDo = (ev) => {
 
     //create a delete button to go into the list item
     let deleteButton = document.createElement("button");
-    deleteButton.setAttrubute("id", "dlt-btn");
+    deleteButton.setAttribute("id", "dlt-btn");
 
     //create the text for the delete button
     let deleteButtonText = document.createTextNode("X")
