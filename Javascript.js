@@ -25,7 +25,7 @@ const createToDo = (ev) => {
     deleteButton.setAttribute("id", "dlt-btn");
 
     //create the text for the delete button
-    let deleteButtonText = document.createTextNode("X")
+    let deleteButtonText = document.createTextNode("Delete")
 
     //appending the text into the delete button
     deleteButton.appendChild(deleteButtonText);
@@ -48,6 +48,23 @@ const createToDo = (ev) => {
     itemList.appendChild(newListItem);
 }
 
+const deleteToDo = (ev) => {
+    //prevent the page from reloading on click
+    ev.preventDefault();
+
+    
+}
+//onclick event created for the entry button
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("btn").addEventListener('click', createToDo);
 });
+
+//onclick event created for the delete button
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
+})
+
+//onclick event created for the completed button
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("done-button").addEventListener('click', completeToDo)
+})
