@@ -20,6 +20,13 @@ const createToDo = (ev) => {
     let newListItem = document.createElement("li");
     newListItem.setAttribute("class", "new-list-item");
 
+    //create a delete button to go into the list item
+    let deleteButton = document.createElement("button");
+    deleteButton.setAttrubute("id", "dlt-btn");
+
+    //create the text for the delete button
+    let deleteButtonText = document.createTextNode("X")
+
     //creating the text node to hold the information
     let listText = document.createTextNode(item);
 
