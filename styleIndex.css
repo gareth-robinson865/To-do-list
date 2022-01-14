@@ -15,8 +15,8 @@ body {
 
 .active-list-item {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    grid-template-rows: 25px 1fr;
     list-style-type: none;
     background-color: aqua;
     width: 100%;
@@ -31,15 +31,17 @@ body {
 
 #list-area {
     display: flex;
-    flex-direction: row;
-    width: 40%;
+    width: 30%;
     margin: auto;
 }
 
 .active-list-item > #dlt-btn {
     grid-row: 1 / 2;
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
     margin: 5px;
+    width: 20px;
+    height: 20px;
+    float: right;
 }
 
 .active-list-item > h3 {
@@ -53,4 +55,8 @@ body {
     width: 100%;
     background-color: black;
     flex-direction: column;
+}
+
+.deleted {
+    display: none;
 }
