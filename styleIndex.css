@@ -37,9 +37,8 @@ body {
 
 .active-list-item > #dlt-btn {
     grid-row: 1 / 2;
-    grid-column: 4 / 5;
+    grid-column: 3 / 5;
     margin: 5px;
-    width: 20px;
     height: 20px;
     float: right;
 }
@@ -59,4 +58,8 @@ body {
 
 .deleted {
     display: none;
+}
+
+.completed {
+    background: green;
 }
