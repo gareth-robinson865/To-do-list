@@ -13,7 +13,7 @@ body {
 
 }
 
-.new-list-item {
+.active-list-item {
     list-style-type: none;
     background-color: aqua;
     padding: 30px;
