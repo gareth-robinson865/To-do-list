@@ -30,11 +30,17 @@ const createToDo = (ev) => {
     //appending the text into the delete button
     deleteButton.appendChild(deleteButtonText);
 
-    //creating the text node to hold the information
+    //creating the a h3 element to hold the information
+    let textHolder = document.createElement("h3");
+
+    //creating the text to be appended into the h3
     let listText = document.createTextNode(item);
 
+    //appending the text to the h3 element
+    textHolder.appendChild(listText);
+
     //appending the text and delete button to the list element
-    newListItem.appendChild(listText);
+    newListItem.appendChild(textHolder);
     newListItem.appendChild(deleteButton);
 
     //appending the new list item to the overall list
