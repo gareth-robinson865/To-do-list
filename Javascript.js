@@ -20,15 +20,19 @@ const createToDo = (ev) => {
     let newListItem = document.createElement("li");
     newListItem.setAttribute("class", "active-list-item");
 
-    //create a delete button to go into the list item
+    //create a delete and completed button to go into the list item
     let deleteButton = document.createElement("button");
     deleteButton.setAttribute("id", "dlt-btn");
+    let completedButton = document.createElement("button");
+    completedButton.setAttribute("id", "done-button");
 
-    //create the text for the delete button
-    let deleteButtonText = document.createTextNode("Delete")
+    //create the text for the delete and complete button
+    let deleteButtonText = document.createTextNode("Delete");
+    let completeButtonText = document.createTextNode("Complete");
 
-    //appending the text into the delete button
+    //appending the text into the delete and complete button
     deleteButton.appendChild(deleteButtonText);
+    completedButton.appendChild(completeButtonText);
 
     //creating the a h3 element to hold the information
     let textHolder = document.createElement("h3");
@@ -39,9 +43,10 @@ const createToDo = (ev) => {
     //appending the text to the h3 element
     textHolder.appendChild(listText);
 
-    //appending the text and delete button to the list element
+    //appending the text, complete and delete button to the list element
     newListItem.appendChild(textHolder);
     newListItem.appendChild(deleteButton);
+    newListItem.appendChild(completedButton);
 
     //appending the new list item to the overall list
     let itemList = document.getElementById("list");
@@ -52,7 +57,7 @@ const deleteToDo = (ev) => {
     //prevent the page from reloading on click
     ev.preventDefault();
 
-    
+
 }
 //onclick event created for the entry button
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,11 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //onclick event created for the delete button
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
-})
+//document.addEventListener('DOMContentLoaded', () => {
+//    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
+//})
 
 //onclick event created for the completed button
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("done-button").addEventListener('click', completeToDo)
-})
+//document.addEventListener('DOMContentLoaded', () => {
+//    document.getElementById("done-button").addEventListener('click', completeToDo)
+//})
