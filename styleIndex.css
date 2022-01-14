@@ -14,10 +14,12 @@ body {
 }
 
 .active-list-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     list-style-type: none;
     background-color: aqua;
     padding: 30px;
-    text-align: center;
     border-radius: 10px;
     border: 2px solid black;
     margin: 10px;
@@ -32,4 +34,9 @@ body {
     flex-direction: row;
     width: 40%;
     margin: auto;
+}
+
+.active-list-item > button {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
 }
