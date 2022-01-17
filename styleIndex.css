@@ -10,29 +10,26 @@ body {
     background-color: white;
     padding: 0;
     margin: 0;
+    height: 100vh;
 
 }
 
 .active-list-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 40px;
-    grid-template-rows: 25px 1fr;
+    grid-template-rows: .5fr. .5fr;
     list-style-type: none;
     background-color: aqua;
-    width: 100%;
     border-radius: 10px;
     border: 2px solid black;
-    
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
 }
 
 #display-area {
-    margin: auto;
-}
-
-#list-area {
-    display: flex;
-    width: 30%;
-    margin: auto;
+    background: red;
+    height: 600px;
 }
 
 #dlt-btn {
@@ -59,9 +56,8 @@ body {
 #list {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: black;
-    flex-direction: column;
+    height: 600px;
 }
 
 .completed {
