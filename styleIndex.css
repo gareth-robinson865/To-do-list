@@ -56,10 +56,6 @@ body {
     flex-direction: column;
 }
 
-.deleted {
-    display: none;
-}
-
 .completed {
     background: green;
 }
