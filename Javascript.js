@@ -35,14 +35,6 @@ const createToDo = (ev) => {
     completedButton.setAttribute("value", "Completed");
     completedButton.setAttribute("onclick", "completeToDo("+ thingsToDo +");");
 
-    //create the text for the delete and complete button
-    let deleteButtonText = document.createTextNode("Delete");
-    let completeButtonText = document.createTextNode("Complete");
-
-    //appending the text into the delete and complete button
-    deleteButton.appendChild(deleteButtonText);
-    completedButton.appendChild(completeButtonText);
-
     //creating the a h3 element to hold the information
     let textHolder = document.createElement("h3");
 
