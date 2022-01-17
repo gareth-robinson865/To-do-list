@@ -18,6 +18,7 @@ const createToDo = (ev) => {
 
     //create a new list item with the class "list-item"
     let newListItem = document.createElement("li");
+    newListItem.setAttribute("id", "active-list-item"+thingsToDo);
     newListItem.setAttribute("class", "active-list-item");
 
     //create a delete and completed button to go into the list item
