@@ -58,4 +58,11 @@ body {
 
 .completed {
     background: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    grid-template-rows: 25px 1fr;
+    list-style-type: none;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
 }
