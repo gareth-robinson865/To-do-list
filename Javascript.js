@@ -21,8 +21,12 @@ const createToDo = (ev) => {
     newListItem.setAttribute("class", "active-list-item");
 
     //create a delete and completed button to go into the list item
-    let deleteButton = document.createElement("button");
+    let deleteButton = document.createElement("input");
     deleteButton.setAttribute("id", "dlt-btn");
+    deleteButton.setAttribute("type", "button");
+    
+
+
     let completedButton = document.createElement("button");
     completedButton.setAttribute("id", "done-button");
 
@@ -69,10 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("btn").addEventListener('click', createToDo);
 });
 
-//onclick event created for the delete button
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
-})
+
 
 //onclick event created for the completed button
 //document.addEventListener('DOMContentLoaded', () => {
