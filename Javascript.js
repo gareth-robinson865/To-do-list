@@ -56,8 +56,12 @@ const createToDo = (ev) => {
 const deleteToDo = (ev) => {
     //prevent the page from reloading on click
     ev.preventDefault();
+    
 
+}
 
+const completeToDo = (ev) => {
+    ev.preventDefault();
 }
 //onclick event created for the entry button
 document.addEventListener('DOMContentLoaded', () => {
