@@ -57,6 +57,9 @@ const createToDo = (ev) => {
     //appending the new list item to the overall list
     let itemList = document.getElementById("list");
     itemList.appendChild(newListItem);
+
+    thingsToDo++
+    console.log(thingsToDo);
 }
 
 const deleteToDo = (ev) => {
