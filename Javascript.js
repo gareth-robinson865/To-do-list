@@ -73,10 +73,3 @@ const completeToDo = (ev) => {
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("btn").addEventListener('click', createToDo);
 });
-
-
-
-//onclick event created for the completed button
-//document.addEventListener('DOMContentLoaded', () => {
-//    document.getElementById("done-button").addEventListener('click', completeToDo)
-//})
