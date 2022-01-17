@@ -35,9 +35,17 @@ body {
     margin: auto;
 }
 
-.active-list-item > #dlt-btn {
+#dlt-btn {
     grid-row: 1 / 2;
     grid-column: 3 / 5;
+    margin: 5px;
+    height: 20px;
+    float: right;
+}
+
+#done-button {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     margin: 5px;
     height: 20px;
     float: right;
@@ -65,4 +73,9 @@ body {
     width: 100%;
     border-radius: 10px;
     border: 2px solid black;
+}
+
+.completed > h3 {
+    grid-row: 2 / 2;
+    grid-column: 1 / 5;
 }
