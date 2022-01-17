@@ -62,12 +62,8 @@ const createToDo = (ev) => {
     console.log(thingsToDo);
 }
 
-const deleteToDo = (ev) => {
-    //prevent the page from reloading on click
-    ev.preventDefault();
-
-    //add the deleted class to the selected item
-    newListItem.setAttribute('class', 'deleted');
+const deleteToDo = (ID) => {
+    document.getElementById('active-list-item'+ID).remove();
 }
 
 const completeToDo = (ev) => {
