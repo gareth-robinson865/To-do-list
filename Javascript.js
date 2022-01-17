@@ -56,8 +56,9 @@ const createToDo = (ev) => {
 const deleteToDo = (ev) => {
     //prevent the page from reloading on click
     ev.preventDefault();
-    
 
+    //add the deleted class to the selected item
+    newListItem.setAttribute('class', 'deleted');
 }
 
 const completeToDo = (ev) => {
