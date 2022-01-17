@@ -67,7 +67,7 @@ const deleteToDo = (ID) => {
 }
 
 const completeToDo = (ID) => {
-    let completed = document.getElementById('active-list-item'+ID);
+    document.getElementById('active-list-item'+ID).setAttribute('class', 'completed');
 }
 //onclick event created for the entry button
 document.addEventListener('DOMContentLoaded', () => {
