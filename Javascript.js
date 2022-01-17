@@ -66,8 +66,8 @@ const deleteToDo = (ID) => {
     document.getElementById('active-list-item'+ID).remove();
 }
 
-const completeToDo = (ev) => {
-    ev.preventDefault();
+const completeToDo = (ID) => {
+    let completed = document.getElementById('active-list-item'+ID);
 }
 //onclick event created for the entry button
 document.addEventListener('DOMContentLoaded', () => {
