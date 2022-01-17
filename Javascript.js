@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //onclick event created for the delete button
-//document.addEventListener('DOMContentLoaded', () => {
-//    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
-//})
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("dlt-btn").addEventListener('click', deleteToDo);
+})
 
 //onclick event created for the completed button
 //document.addEventListener('DOMContentLoaded', () => {
