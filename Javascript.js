@@ -25,6 +25,7 @@ const createToDo = (ev) => {
     let deleteButton = document.createElement("input");
     deleteButton.setAttribute("id", "dlt-btn");
     deleteButton.setAttribute("type", "button");
+    deleteButton.setAttribute("value", "Remove");
     
 
 
