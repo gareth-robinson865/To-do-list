@@ -1,6 +1,6 @@
 let toDoItems = [];
 let thingsToDo = 0;
-
+//want to add control flow to the create to do so that the input cannot be empty
 const createToDo = (ev) => {
     //prevent the page reloading on button press
     ev.preventDefault();
